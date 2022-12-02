@@ -6,10 +6,14 @@ public class MoveToBun : MonoBehaviour
 {
     public GameObject sprite;
 	public static int offset;
+	public int cal_value;
+	
 	void OnMouseDown()
 	{
-		sprite = Instantiate(sprite, new Vector3(-0.04f, (-0.29f+offset), 0), transform.rotation);
+		var new_sprite = Instantiate(sprite, new Vector3(-0.04f, (-0.29f+offset), 0), transform.rotation);
 		offset += 1;
+		SwitchScenes.bun_sprites.Add(new_sprite);
+		SwitchScenes.bun_values.Add(cal_value);
 	}
 }
 
