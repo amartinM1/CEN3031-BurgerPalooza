@@ -12,7 +12,8 @@ public class ResetBurger : MonoBehaviour
 		}
 		SwitchScenes.bun_sprites.Clear();
 		MoveToBun.offset = 0;
-		
-		SwitchScenes.bun_values.Clear();
+		SwitchScenes.patties = 0;
+		SwitchScenes.cheese = 0;
+		SwitchScenes.buns = 0;
 	}
 }

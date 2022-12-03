@@ -7,7 +7,9 @@ public class SwitchScenes : MonoBehaviour
 {
 	//I think these values needs to be here since we want them to be called once...
 	public static List<GameObject> bun_sprites = new List<GameObject>();
-	public static List<int> bun_values = new List<int>();
+    public static int patties = 0;
+    public static int buns = 0;
+    public static int cheese = 0;
 	
     public void playGame()
     {

@@ -13,7 +13,13 @@ public class MoveToBun : MonoBehaviour
 		var new_sprite = Instantiate(sprite, new Vector3(-0.04f, (-0.29f+offset), 0), transform.rotation);
 		offset += 1;
 		SwitchScenes.bun_sprites.Add(new_sprite);
-		SwitchScenes.bun_values.Add(cal_value);
+		string name = sprite.name;
+		if (name == "patty_prefab")
+			SwitchScenes.patties += 1;
+		else if (name == ("cheese_prefab"))
+			SwitchScenes.cheese += 1;
+		else if (name == ("top_bun_prefab"))
+			SwitchScenes.buns += 1;
 	}
 }
 
