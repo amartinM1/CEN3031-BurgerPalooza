@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class nav_to_login : MonoBehaviour
+public class old_nav_to_login : MonoBehaviour
 {
-   public void MoveToScene(int sceneID){
+   public void old_MoveToScene(int sceneID){
 
     SceneManager.LoadScene(sceneID);
    }
