@@ -616,7 +616,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2049a6ab3bd98b84580348d97b887cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   sceneID: 1
+=======
+  sceneID: 3
+>>>>>>> Stashed changes
   loadingBar: {fileID: 1450723059}
   loadingScreen: {fileID: 1218047428}
 --- !u!1 &1218047428

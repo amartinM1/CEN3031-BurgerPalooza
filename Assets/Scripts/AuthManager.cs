@@ -124,7 +124,11 @@ public class AuthManager : MonoBehaviour
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
             yield return new WaitForSeconds(1f);
+<<<<<<< Updated upstream
             navObject.MoveToScene(3);
+=======
+            navObject.MoveToScene(2);
+>>>>>>> Stashed changes
         }
     }
 
@@ -206,7 +210,11 @@ public class AuthManager : MonoBehaviour
                         //UIManager.instance.LoginScreen();
                         //warningRegisterText.text = "";
                         yield return new WaitForSeconds(1f);
+<<<<<<< Updated upstream
                         navObject.MoveToScene(3);
+=======
+                        navObject.MoveToScene(2);
+>>>>>>> Stashed changes
                     }
                 }
             }

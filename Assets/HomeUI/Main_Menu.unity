@@ -342,6 +342,12 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 179241399}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< Updated upstream:Assets/HomeUI/Main_Menu.unity
+=======
+<<<<<<< Updated upstream:Assets/Home UI/Main_Menu.unity
+      m_Calls: []
+=======
+>>>>>>> Stashed changes:Assets/Home UI/Main_Menu.unity
       m_Calls:
       - m_Target: {fileID: 179241401}
         m_TargetAssemblyTypeName: old_nav_to_login, Assembly-CSharp
@@ -350,11 +356,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+<<<<<<< Updated upstream:Assets/HomeUI/Main_Menu.unity
           m_IntArgument: 4
+=======
+          m_IntArgument: 1
+>>>>>>> Stashed changes:Assets/Home UI/Main_Menu.unity
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< Updated upstream:Assets/HomeUI/Main_Menu.unity
+=======
+>>>>>>> Stashed changes:Assets/HomeUI/Main_Menu.unity
+>>>>>>> Stashed changes:Assets/Home UI/Main_Menu.unity
 --- !u!114 &179241399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +407,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179241396}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream:Assets/HomeUI/Main_Menu.unity
+=======
+<<<<<<< Updated upstream:Assets/Home UI/Main_Menu.unity
+=======
+>>>>>>> Stashed changes:Assets/Home UI/Main_Menu.unity
 --- !u!114 &179241401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,6 +470,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Assets/HomeUI/Main_Menu.unity
+=======
+--- !u!1 &724499808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724499810}
+  - component: {fileID: 724499809}
+  m_Layer: 0
+  m_Name: OnGameStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &724499809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724499808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df231e963f4fff04f8400cf3b0299fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &724499810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724499808}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes:Assets/HomeUI/Main_Menu.unity
+>>>>>>> Stashed changes:Assets/Home UI/Main_Menu.unity
 --- !u!1 &736673755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1259,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1519527685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519527687}
+  - component: {fileID: 1519527688}
+  m_Layer: 0
+  m_Name: ExitGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519527687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519527685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1519527688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519527685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9838a959ad9778949a59439b1033da2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680549890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1386,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1680549893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1519527688}
+        m_TargetAssemblyTypeName: ExitGame, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1680549893
 MonoBehaviour:
   m_ObjectHideFlags: 0

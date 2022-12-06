@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Home UI/Main_Menu.unity
+    guid: d6ab543dea5ba1c4ca40ce9253d0b3d6
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 8df64d97493a4324c9027765c94a21dc
+  - enabled: 1
+    path: Assets/HomeUI/Final_Login.unity
+    guid: 34b983430bff414408857ae7268bcdb3
+  - enabled: 0
+    path: Assets/HomeUI/Login.unity
+    guid: b4950a1b4db91e64286a824426dfdec7
+  - enabled: 1
+    path: Assets/HomeUI/Loading_Login.unity
+    guid: bb058d2fdf020b44b99301bbd14bad35
   - enabled: 1
     path: Assets/Scenes/BurgerNutrition.unity
     guid: e1640bd8c4e958247b89dc5032b0d777

@@ -34,4 +34,12 @@ public class UIManager : MonoBehaviour
         loginUI.SetActive(false);
         registerUI.SetActive(true);
     }
+<<<<<<< Updated upstream
+=======
+
+    public void ExitGame() //Exit button
+    {
+        Application.Quit();
+    }
+>>>>>>> Stashed changes
 }
