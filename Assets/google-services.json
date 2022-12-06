@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "631909861044",
-    "project_id": "cen3031-final",
-    "storage_bucket": "cen3031-final.appspot.com"
+    "project_number": "440620196587",
+    "project_id": "burger-building-bonanza",
+    "storage_bucket": "burger-building-bonanza.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:631909861044:android:2368feea9a77f42f8b39e1",
+        "mobilesdk_app_id": "1:440620196587:android:cf1be01634d78c53a5d4ae",
         "android_client_info": {
           "package_name": "com.DefaultCompany.BurgerBuildingBonanza"
         }
       },
       "oauth_client": [
         {
-          "client_id": "631909861044-nn667pacpiqp00q1bbbp532rp2qs2c03.apps.googleusercontent.com",
+          "client_id": "440620196587-tgf7a8o7vmptssv3vlo1r1cecsrbkumf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB-lAmxgmf5aRe8DEhCwbhw6SXvsGpMDfk"
+          "current_key": "AIzaSyAoI_LTMxwZPq5_FhkBRxlT5BbRfcuGUpo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "631909861044-nn667pacpiqp00q1bbbp532rp2qs2c03.apps.googleusercontent.com",
+              "client_id": "440620196587-tgf7a8o7vmptssv3vlo1r1cecsrbkumf.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

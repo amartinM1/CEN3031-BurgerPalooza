@@ -1,19 +1,18 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Firebase;
 using Firebase.Auth;
 using TMPro;
 
-
 public class nav_to_login : MonoBehaviour
 {
-   public int sceneID;
-   public void MoveToScene(int sceneID){
+    public int sceneID;
+    public void MoveToScene(int sceneID)
+    {
 
-    SceneManager.LoadScene(sceneID);
-   }
+        SceneManager.LoadScene(sceneID);
+    }
 }
 
 
@@ -22,7 +21,7 @@ public class AuthManager : MonoBehaviour
     //Firebase variables
     [Header("Firebase")]
     public DependencyStatus dependencyStatus;
-    public FirebaseAuth auth;    
+    public FirebaseAuth auth;
     public FirebaseUser User;
 
     //Login variables
@@ -58,7 +57,6 @@ public class AuthManager : MonoBehaviour
         });
     }
 
-   
     private void InitializeFirebase()
     {
         Debug.Log("Setting up Firebase Auth");
@@ -81,13 +79,14 @@ public class AuthManager : MonoBehaviour
 
     private IEnumerator Login(string _email, string _password)
     {
-       // nav_to_login navObject = new nav_to_login();
-      
+
+        nav_to_login navObject = gameObject.AddComponent(typeof(nav_to_login)) as nav_to_login;
+
         //Call the Firebase auth signin function passing the email and password
         var LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
         //Wait until the task completes
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
-        nav_to_login navObject = gameObject.AddComponent(typeof(nav_to_login)) as nav_to_login;
+
         if (LoginTask.Exception != null)
         {
             //If there are errors handle them
@@ -123,26 +122,28 @@ public class AuthManager : MonoBehaviour
             User = LoginTask.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
-            confirmLoginText.text = "Logged In!";
+            confirmLoginText.text = "Logged In";
             yield return new WaitForSeconds(1f);
-           navObject.MoveToScene(3);
+            navObject.MoveToScene(3);
         }
     }
 
     private IEnumerator Register(string _email, string _password, string _username)
     {
+
         nav_to_login navObject = gameObject.AddComponent(typeof(nav_to_login)) as nav_to_login;
+
         if (_username == "")
         {
             //If the username field is blank show a warning
             warningRegisterText.text = "Missing Username";
         }
-        else if(passwordRegisterField.text != passwordRegisterVerifyField.text)
+        else if (passwordRegisterField.text != passwordRegisterVerifyField.text)
         {
             //If the password does not match show a warning
             warningRegisterText.text = "Password Does Not Match!";
         }
-        else 
+        else
         {
             //Call the Firebase auth signin function passing the email and password
             var RegisterTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
@@ -183,7 +184,7 @@ public class AuthManager : MonoBehaviour
                 if (User != null)
                 {
                     //Create a user profile and set the username
-                    UserProfile profile = new UserProfile{DisplayName = _username};
+                    UserProfile profile = new UserProfile { DisplayName = _username };
 
                     //Call the Firebase auth update user profile function passing the profile with the username
                     var ProfileTask = User.UpdateUserProfileAsync(profile);
@@ -202,18 +203,13 @@ public class AuthManager : MonoBehaviour
                     {
                         //Username is now set
                         //Now return to login screen
-                       /// UIManager.instance.LoginScreen(); //COMMENTED THIS OUT
-
-                         
-                        warningRegisterText.text = "Account Created!";
+                        //UIManager.instance.LoginScreen();
+                        //warningRegisterText.text = "";
                         yield return new WaitForSeconds(1f);
                         navObject.MoveToScene(3);
-                       // navObject.MoveToScene(navObject.sceneID); //new code to navigate to loading
                     }
                 }
             }
         }
     }
 }
-
-
