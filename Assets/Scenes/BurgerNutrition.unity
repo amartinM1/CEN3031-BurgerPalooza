@@ -771,15 +771,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b07abe2ba58bba04da62885846c5063b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1145,7 +1145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010967, y: 30.1}
+  m_AnchoredPosition: {x: -0.000010967, y: 23.7}
   m_SizeDelta: {x: 175.25, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368549106
@@ -4402,8 +4402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000095367, y: -138.877}
-  m_SizeDelta: {x: 160, y: 251.756}
+  m_AnchoredPosition: {x: 0.000011253, y: -159.824}
+  m_SizeDelta: {x: 192.82, y: 291.243}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341303754
 MonoBehaviour:
@@ -4425,7 +4425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77cece1937da58e44a19803e94816422, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee8b6ac77ca819340a0c7e2e62a3563f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4503,10 +4503,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 8
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -4514,7 +4514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chick-fil-A Chicken Sandwich
+  m_Text: McDonald's Big Mac
 --- !u!222 &1346257832
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4684,8 +4684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -675, y: 308}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -658, y: 392.2}
+  m_SizeDelta: {x: 192.82, y: 32.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390467069
 MonoBehaviour:
@@ -4736,9 +4736,19 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Chick-fil-A Chicken Sandwich
+    - m_Text: McDonald's Big Mac
       m_Image: {fileID: 0}
-    - m_Text: Test
+    - m_Text: McDonald's Hamburger
+      m_Image: {fileID: 0}
+    - m_Text: McDonald's Cheeseburger
+      m_Image: {fileID: 0}
+    - m_Text: Burger King Whopper
+      m_Image: {fileID: 0}
+    - m_Text: Burger King Impossible Whopper
+      m_Image: {fileID: 0}
+    - m_Text: Culver's Cheese Butterburger (Single)
+      m_Image: {fileID: 0}
+    - m_Text: Whataburger
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4808,8 +4818,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oldImage: {fileID: 1341303754}
   newImage:
-  - {fileID: 21300000, guid: 77cece1937da58e44a19803e94816422, type: 3}
-  - {fileID: 21300000, guid: 1016840491f4e624cab631852f67673c, type: 3}
+  - {fileID: 21300000, guid: ee8b6ac77ca819340a0c7e2e62a3563f, type: 3}
+  - {fileID: 21300000, guid: 385499a8d16f14b49b39284ad6c9490b, type: 3}
+  - {fileID: 21300000, guid: 90223035fb21d8746808fc245258b4ba, type: 3}
+  - {fileID: 21300000, guid: 0dda7292972b38d4d805ea7908869a0a, type: 3}
+  - {fileID: 21300000, guid: e9f6bd9e6d4a53b47a7e9db1731299d2, type: 3}
+  - {fileID: 21300000, guid: 673205c20eba7b940a11fb2b06ee505f, type: 3}
+  - {fileID: 21300000, guid: 4cd532d2a8c7c914eb88a292c800b086, type: 3}
   burgerDropdown: {fileID: 1390467069}
 --- !u!1 &1397076647
 GameObject:
